@@ -1,0 +1,28 @@
+# Escenario: default-core (adopción smoke).
+# Método vía submodule sdaf-core@v0.1.0. Sin pack de stack.
+
+sdaf:
+  version: "0.1.0"
+
+project:
+  name: SdafAdoptionSmoke
+  language: es
+
+stack:
+  pack: null
+  src_path: src
+  tests_path: tests
+
+agents:
+  active:
+    - specification
+    - architecture
+    - testing-review
+  stubs:
+    - product
+    - domain
+    - application
+    - devops
+    - review
+    - testing
+  fusions: {}
